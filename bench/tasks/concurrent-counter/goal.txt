@@ -1,0 +1,1 @@
+write counter.py exposing a class Counter with methods incr() and value(), guaranteed thread-safe so that 16 threads each calling incr() 5000 times yields exactly value()==80000. Use only the python standard library. Also write test_counter.py demonstrating the thread-safety property.

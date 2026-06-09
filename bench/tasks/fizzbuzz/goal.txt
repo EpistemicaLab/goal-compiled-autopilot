@@ -1,0 +1,1 @@
+write fizzbuzz.py that prints numbers 1 to 15 one per line applying Fizz Buzz FizzBuzz rules, plus a passing test_fizzbuzz.py using only the python standard library unittest module

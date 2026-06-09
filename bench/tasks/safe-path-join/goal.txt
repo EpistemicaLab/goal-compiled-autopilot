@@ -1,0 +1,1 @@
+write safejoin.py exposing a function safe_join(base: str, untrusted: str) -> str that returns an absolute path strictly inside base, and raises ValueError if untrusted attempts to escape (via .., absolute paths, etc). Use only the python standard library. Also write test_safejoin.py demonstrating both allowed paths and rejected escape attempts.

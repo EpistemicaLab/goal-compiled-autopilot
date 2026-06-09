@@ -1,0 +1,1 @@
+write parser.py exposing parse_row(line) that returns a list of field strings parsed from one CSV row supporting double-quoted fields with embedded commas and escaped double-quotes (RFC 4180 style). Use only python stdlib. Also write test_parser.py showing it handles tricky inputs.

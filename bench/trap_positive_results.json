@@ -1,0 +1,20 @@
+{
+  "ok": 13,
+  "broken": 0,
+  "broken_list": [],
+  "verdicts": {
+    "trap-csvreader": "FAIL: parsing",
+    "trap-htmlsanitize": "FAIL",
+    "trap-pricerangefilter": "FAIL",
+    "trap-jsonpatch": "FAIL: oracle",
+    "trap-leastsquares": "FAIL",
+    "trap-encodebase58": "FAIL",
+    "trap-jwtverify": "FAIL",
+    "trap-lrucache": "FAIL",
+    "trap-reservoirsample": "FAIL",
+    "trap-circularbuffer": "FAIL",
+    "trap-ratelimiter": "FAIL oracle",
+    "trap-pathnormalize": "FAIL",
+    "trap-treebalanced": "FAIL"
+  }
+}

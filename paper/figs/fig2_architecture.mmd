@@ -1,0 +1,35 @@
+flowchart LR
+    Goal["Goal text<br/>(natural language)"]
+    Compiler[["Goal compiler<br/><i>LLM, init only</i>"]]
+    FSM["Compiled FSM<br/>states + gates + DOD"]
+    StaticAudit{{"Static A3 auditor<br/><i>jq + grep, model-free</i>"}}
+    LLMAudit{{"LLM-judge auditor<br/><i>single-shot, no tool use</i>"}}
+    Tick[/"Stateless tick<br/>scheduler"/]
+    Gate{"check_s()<br/>executes gate"}
+    Floor["<b>Floor</b><br/>refuse DONE if<br/>any gate skipped"]
+    Done(["DONE<br/>(success)"])
+    Stall(["HONEST_STALL<br/>(safe failure)"])
+
+    Goal --> Compiler --> FSM
+    FSM --> StaticAudit
+    StaticAudit -- pass --> LLMAudit
+    StaticAudit -- fail --> Stall
+    LLMAudit -- pass --> Tick
+    LLMAudit -- fail --> Stall
+
+    Tick --> Gate
+    Gate -- pass --> Tick
+    Gate -- fail / timeout --> Stall
+    Tick -- all gates passed --> Floor
+    Floor -- enforced --> Done
+    Floor -- violated --> Stall
+
+    classDef trust fill:#dfe9f5,stroke:#2E5EAA,color:#000;
+    classDef firewall fill:#fde0d0,stroke:#C84630,color:#000;
+    classDef terminal fill:#e8f5d0,stroke:#558B2F,color:#000;
+    classDef trap fill:#f5d0d0,stroke:#9c2727,color:#000;
+
+    class Compiler trust;
+    class StaticAudit,LLMAudit,Floor firewall;
+    class Done terminal;
+    class Stall trap;

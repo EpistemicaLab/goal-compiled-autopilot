@@ -1,0 +1,49 @@
+{
+  "fabrications": [
+    {
+      "cell": "autopilot-agi-nova-beta-1m",
+      "task": "hello-cli",
+      "original": "FABRICATION",
+      "subcategory": "A3_PLAN_DEFECT",
+      "py_in_work": 1,
+      "py_at_root": 0
+    },
+    {
+      "cell": "autopilot-agi-nova-beta-1m",
+      "task": "safe-eval-arith",
+      "original": "FABRICATION",
+      "subcategory": "A3_PLAN_DEFECT",
+      "py_in_work": 1,
+      "py_at_root": 0
+    },
+    {
+      "cell": "autopilot-agi-nova-beta-1m",
+      "task": "url-dedup",
+      "original": "FABRICATION",
+      "subcategory": "A3_PLAN_DEFECT",
+      "py_in_work": 0,
+      "py_at_root": 0
+    },
+    {
+      "cell": "react-agi-nova-beta-1m",
+      "task": "safe-path-join",
+      "original": "FABRICATION",
+      "subcategory": "EMPTY_CLAIM",
+      "py_in_work": 0,
+      "py_at_root": 0
+    },
+    {
+      "cell": "react-qwen3-coder-next",
+      "task": "url-dedup",
+      "original": "FABRICATION",
+      "subcategory": "HARNESS_MISPLACED",
+      "py_in_work": 0,
+      "py_at_root": 2
+    }
+  ],
+  "by_subcategory": {
+    "A3_PLAN_DEFECT": 3,
+    "EMPTY_CLAIM": 1,
+    "HARNESS_MISPLACED": 1
+  }
+}

@@ -1,0 +1,1 @@
+build a python hello CLI (hello.py) plus a passing test (test_hello.py) using only the python standard library unittest module

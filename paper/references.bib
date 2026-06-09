@@ -1,0 +1,234 @@
+% Prior art referenced in goal-autopilot submission
+% (DRAFT.md cites these by name in §2 Related Work)
+
+@article{wu2024stateflow,
+  title={{StateFlow}: Enhancing {LLM} task-solving through state-driven workflows},
+  author={Wu, Yiran and Yue, Tianwei and Zhang, Shaokun and Wang, Chi and Wu, Qingyun},
+  journal={arXiv preprint arXiv:2403.11322},
+  year={2024}
+}
+
+@article{shinn2023reflexion,
+  title={Reflexion: Language agents with verbal reinforcement learning},
+  author={Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
+  journal={Advances in Neural Information Processing Systems},
+  year={2023},
+  eprint={2303.11366},
+  archivePrefix={arXiv}
+}
+
+@article{madaan2023selfrefine,
+  title={{Self-Refine}: Iterative refinement with self-feedback},
+  author={Madaan, Aman and Tandon, Niket and Gupta, Prakhar and Hallinan, Skyler and Gao, Luyu and Wiegreffe, Sarah and Alon, Uri and Dziri, Nouha and Prabhumoye, Shrimai and Yang, Yiming and others},
+  journal={Advances in Neural Information Processing Systems},
+  year={2023},
+  eprint={2303.17651},
+  archivePrefix={arXiv}
+}
+
+@inproceedings{yao2023react,
+  title={{ReAct}: Synergizing reasoning and acting in language models},
+  author={Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan},
+  booktitle={International Conference on Learning Representations},
+  year={2023},
+  eprint={2210.03629},
+  archivePrefix={arXiv}
+}
+
+@article{wu2023autogen,
+  title={{AutoGen}: Enabling next-gen {LLM} applications via multi-agent conversations},
+  author={Wu, Qingyun and Bansal, Gagan and Zhang, Jieyu and Wu, Yiran and Zhang, Shaokun and Zhu, Erkang and Li, Beibin and Jiang, Li and Zhang, Xiaoyun and Wang, Chi},
+  journal={arXiv preprint arXiv:2308.08155},
+  year={2023}
+}
+
+@misc{langgraph2024,
+  title={{LangGraph}: Stateful, multi-actor applications with {LLMs}},
+  author={LangChain Inc.},
+  year={2024},
+  howpublished={\url{https://langchain-ai.github.io/langgraph/}}
+}
+
+@inproceedings{geifman2017selective,
+  title={Selective classification for deep neural networks},
+  author={Geifman, Yonatan and El-Yaniv, Ran},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2017},
+  eprint={1705.08500},
+  archivePrefix={arXiv}
+}
+
+@inproceedings{jimenez2024swebench,
+  title={{SWE-bench}: Can language models resolve real-world {GitHub} issues?},
+  author={Jimenez, Carlos E and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik},
+  booktitle={International Conference on Learning Representations},
+  year={2024},
+  eprint={2310.06770},
+  archivePrefix={arXiv}
+}
+
+% ============================================================================
+% Added 2026-06-08: hallucination, calibration, verifiers, tool use,
+% agent benchmarks, planning, safety, LLM-as-judge, factuality, autonomy
+% ============================================================================
+
+@article{ji2023halluc,
+  title={Survey of Hallucination in Natural Language Generation},
+  author={Ji, Ziwei and Lee, Nayeon and Frieske, Rita and Yu, Tiezheng and Su, Dan and Xu, Yan and Ishii, Etsuko and Bang, Yejin and Madotto, Andrea and Fung, Pascale},
+  journal={ACM Computing Surveys},
+  year={2023},
+  eprint={2202.03629},
+  archivePrefix={arXiv}
+}
+
+@article{huang2023halluc,
+  title={A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions},
+  author={Huang, Lei and Yu, Weijiang and Ma, Weitao and Zhong, Weihong and Feng, Zhangyin and Wang, Haotian and Chen, Qianglong and Peng, Weihua and Feng, Xiaocheng and Qin, Bing and Liu, Ting},
+  journal={arXiv preprint arXiv:2311.05232},
+  year={2023}
+}
+
+@inproceedings{maynez2020faithfulness,
+  title={On Faithfulness and Factuality in Abstractive Summarization},
+  author={Maynez, Joshua and Narayan, Shashi and Bohnet, Bernd and McDonald, Ryan},
+  booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  year={2020},
+  eprint={2005.00661},
+  archivePrefix={arXiv}
+}
+
+@article{kadavath2022know,
+  title={Language Models (Mostly) Know What They Know},
+  author={Kadavath, Saurav and Conerly, Tom and Askell, Amanda and Henighan, Tom and Drain, Dawn and Perez, Ethan and Schiefer, Nicholas and Hatfield-Dodds, Zac and DasSarma, Nova and Tran-Johnson, Eli and others},
+  journal={arXiv preprint arXiv:2207.05221},
+  year={2022}
+}
+
+@article{lightman2023verify,
+  title={Let's Verify Step by Step},
+  author={Lightman, Hunter and Kosaraju, Vineet and Burda, Yura and Edwards, Harri and Baker, Bowen and Lee, Teddy and Leike, Jan and Schulman, John and Sutskever, Ilya and Cobbe, Karl},
+  journal={arXiv preprint arXiv:2305.20050},
+  year={2023}
+}
+
+@article{cobbe2021gsm8k,
+  title={Training Verifiers to Solve Math Word Problems},
+  author={Cobbe, Karl and Kosaraju, Vineet and Bavarian, Mohammad and Chen, Mark and Jun, Heewoo and Kaiser, Lukasz and Plappert, Matthias and Tworek, Jerry and Hilton, Jacob and Nakano, Reiichiro and others},
+  journal={arXiv preprint arXiv:2110.14168},
+  year={2021}
+}
+
+@article{schick2023toolformer,
+  title={Toolformer: Language Models Can Teach Themselves to Use Tools},
+  author={Schick, Timo and Dwivedi-Yu, Jane and Dess{\`\i}, Roberto and Raileanu, Roberta and Lomeli, Maria and Zettlemoyer, Luke and Cancedda, Nicola and Scialom, Thomas},
+  journal={arXiv preprint arXiv:2302.04761},
+  year={2023}
+}
+
+@article{patil2023gorilla,
+  title={Gorilla: Large Language Model Connected with Massive APIs},
+  author={Patil, Shishir G. and Zhang, Tianjun and Wang, Xin and Gonzalez, Joseph E.},
+  journal={arXiv preprint arXiv:2305.15334},
+  year={2023}
+}
+
+@article{liu2023agentbench,
+  title={AgentBench: Evaluating LLMs as Agents},
+  author={Liu, Xiao and Yu, Hao and Zhang, Hanchen and Xu, Yifan and Lei, Xuanyu and Lai, Hanyu and Gu, Yu and Ding, Hangliang and Men, Kaiwen and Yang, Kejuan and others},
+  journal={arXiv preprint arXiv:2308.03688},
+  year={2023}
+}
+
+@article{mialon2023gaia,
+  title={{GAIA}: a benchmark for General {AI} Assistants},
+  author={Mialon, Gr{\'e}goire and Fourrier, Cl{\'e}mentine and Swift, Craig and Wolf, Thomas and LeCun, Yann and Scialom, Thomas},
+  journal={arXiv preprint arXiv:2311.12983},
+  year={2023}
+}
+
+@article{zhou2023webarena,
+  title={{WebArena}: A Realistic Web Environment for Building Autonomous Agents},
+  author={Zhou, Shuyan and Xu, Frank F. and Zhu, Hao and Zhou, Xuhui and Lo, Robert and Sridhar, Abishek and Cheng, Xianyi and Ou, Tianyue and Bisk, Yonatan and Fried, Daniel and Alon, Uri and Neubig, Graham},
+  journal={arXiv preprint arXiv:2307.13854},
+  year={2023}
+}
+
+@article{chen2021humaneval,
+  title={Evaluating Large Language Models Trained on Code},
+  author={Chen, Mark and Tworek, Jerry and Jun, Heewoo and Yuan, Qiming and Pinto, Henrique Ponde de Oliveira and Kaplan, Jared and Edwards, Harri and Burda, Yuri and Joseph, Nicholas and Brockman, Greg and others},
+  journal={arXiv preprint arXiv:2107.03374},
+  year={2021}
+}
+
+@inproceedings{yao2023tot,
+  title={Tree of Thoughts: Deliberate Problem Solving with Large Language Models},
+  author={Yao, Shunyu and Yu, Dian and Zhao, Jeffrey and Shafran, Izhak and Griffiths, Thomas L. and Cao, Yuan and Narasimhan, Karthik},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2023},
+  eprint={2305.10601},
+  archivePrefix={arXiv}
+}
+
+@inproceedings{wei2022cot,
+  title={Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},
+  author={Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Ichter, Brian and Xia, Fei and Chi, Ed and Le, Quoc and Zhou, Denny},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2022},
+  eprint={2201.11903},
+  archivePrefix={arXiv}
+}
+
+@article{huang2024planning,
+  title={Understanding the Planning of {LLM} Agents: A Survey},
+  author={Huang, Xu and Liu, Weiwen and Chen, Xiaolong and Wang, Xingmei and Wang, Hao and Lian, Defu and Wang, Yasheng and Tang, Ruiming and Chen, Enhong},
+  journal={arXiv preprint arXiv:2402.02716},
+  year={2024}
+}
+
+@article{xi2023agents,
+  title={The Rise and Potential of Large Language Model Based Agents: A Survey},
+  author={Xi, Zhiheng and Chen, Wenxiang and Guo, Xin and He, Wei and Ding, Yiwen and Hong, Boyang and Zhang, Ming and Wang, Junzhe and Jin, Senjie and Zhou, Enyu and others},
+  journal={arXiv preprint arXiv:2309.07864},
+  year={2023}
+}
+
+@article{bai2022constitutional,
+  title={Constitutional {AI}: Harmlessness from {AI} Feedback},
+  author={Bai, Yuntao and Kadavath, Saurav and Kundu, Sandipan and Askell, Amanda and Kernion, Jackson and Jones, Andy and Chen, Anna and Goldie, Anna and Mirhoseini, Azalia and McKinnon, Cameron and others},
+  journal={arXiv preprint arXiv:2212.08073},
+  year={2022}
+}
+
+@inproceedings{zheng2023judge,
+  title={Judging {LLM-as-a-Judge} with {MT-Bench} and Chatbot Arena},
+  author={Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric P. and Zhang, Hao and Gonzalez, Joseph E. and Stoica, Ion},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2023},
+  eprint={2306.05685},
+  archivePrefix={arXiv}
+}
+
+@inproceedings{min2023factscore,
+  title={{FActScore}: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation},
+  author={Min, Sewon and Krishna, Kalpesh and Lyu, Xinxi and Lewis, Mike and Yih, Wen-tau and Koh, Pang Wei and Iyyer, Mohit and Zettlemoyer, Luke and Hajishirzi, Hannaneh},
+  booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  year={2023},
+  eprint={2305.14251},
+  archivePrefix={arXiv}
+}
+
+@inproceedings{hendrycks2021mmlu,
+  title={Measuring Massive Multitask Language Understanding},
+  author={Hendrycks, Dan and Burns, Collin and Basart, Steven and Zou, Andy and Mazeika, Mantas and Song, Dawn and Steinhardt, Jacob},
+  booktitle={International Conference on Learning Representations},
+  year={2021},
+  eprint={2009.03300},
+  archivePrefix={arXiv}
+}
+
+@article{wang2023voyager,
+  title={Voyager: An Open-Ended Embodied Agent with Large Language Models},
+  author={Wang, Guanzhi and Xie, Yuqi and Jiang, Yunfan and Mandlekar, Ajay and Xiao, Chaowei and Zhu, Yuke and Fan, Linxi and Anandkumar, Anima},
+  journal={arXiv preprint arXiv:2305.16291},
+  year={2023}
+}
