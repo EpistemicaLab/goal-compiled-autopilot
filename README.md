@@ -2,27 +2,24 @@
 
 A verifiable anti-fabrication firewall for unattended long-horizon LLM agents.
 
-This repository accompanies the paper:
+This repository is the **benchmark reproducer** for:
 
 > **Goal-Autopilot: A Verifiable Anti-Fabrication Firewall for Unattended Long-Horizon Agents**
 > Youwang Deng, *EpistemicaLab — Independent Research*, 2026.
-> [arXiv preprint] (link added after submission)
+> arXiv preprint: link added after submission.
 
 ## What's inside
 
 ```
-paper/    LaTeX source, compiled PDF, ICLR style files, and figures.
-          See paper/submission.pdf for the latest compiled version.
-
-bench/    Full reproducer code:
-            run_bench.sh         driver script (Autopilot vs Reflexion vs StateFlow)
-            tasks/               20 trap tasks
-            swebench_tasks/      50 SWE-bench Lite tasks across 11 OSS repos
-            baselines/           Reflexion + StateFlow harnesses
-            p1_corpus/           per-cell artifact summaries (3,150 cells)
-            rescore.sh           re-runs the audit ensemble on existing reports
-            a3_audit.sh          static A3 plan-coverage auditor (60 lines)
-            a3_audit_llm.sh      LLM-judge A3 auditor (67 lines)
+bench/   Full reproducer code.
+           run_bench.sh         driver script (Autopilot vs Reflexion vs StateFlow)
+           tasks/               20 trap tasks
+           swebench_tasks/      50 SWE-bench Lite tasks across 11 OSS repos
+           baselines/           Reflexion + StateFlow harnesses
+           p1_corpus/           per-cell artifact summaries (3,150 cells)
+           rescore.sh           re-runs the audit ensemble on existing reports
+           a3_audit.sh          static A3 plan-coverage auditor (60 lines)
+           a3_audit_llm.sh      LLM-judge A3 auditor (67 lines)
 ```
 
 The 11 GB raw per-cell run logs (`goals/`) are not included; only the
@@ -49,8 +46,7 @@ goal $\to$ goal compiler $\to$ FSM + auditor $\to$ stateless tick scheduler.
 
 ## Code license
 
-Source under [MIT License](LICENSE). Paper text and figures under
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+[MIT License](LICENSE).
 
 ## Contact
 

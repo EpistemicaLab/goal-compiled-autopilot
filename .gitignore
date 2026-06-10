@@ -1,13 +1,3 @@
-# Build artifacts
-paper/_iclr_out/
-paper/_arxiv_bundle/
-paper/*.aux
-paper/*.log
-paper/*.bbl
-paper/*.blg
-paper/*.out
-paper/*.toc
-
 # Backup files
 *.bak
 *.bak-*
